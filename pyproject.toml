@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "totasaievs-flame"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别延迟的火焰图定位的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "totasaievs" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://totasaievs.github.io"
+Repository = "https://github.com/totasaievs/flame"
+Issues = "https://github.com/totasaievs/flame/issues"
+
+[project.scripts]
+flame = "flame:main"
+
+[tool.setuptools]
+py-modules = ["flame"]
